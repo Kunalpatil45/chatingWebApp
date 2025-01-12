@@ -18,7 +18,7 @@ body {
 
 .div {
     width: 100%;
-    max-width: 600px; 
+    /* max-width: 600px;  */
     background-color: #009688;
     text-align: center;
     padding: 10px;
@@ -146,6 +146,7 @@ button.btn:hover {
     }
     
     .div {
+        width: 100%;
         padding: 10px;
         /* margin: 0 10px; */ 
     }
@@ -155,7 +156,7 @@ button.btn:hover {
     }
 
     input.message-sent {
-        width: 100%;
+        max-width:100%;
         margin-bottom: 10px;
         border-radius: 8px;
     }
