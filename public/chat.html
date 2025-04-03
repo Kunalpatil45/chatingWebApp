@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Application</title>
+    <title>kChat</title>
+    <link rel="icon" href="/public/images/th.png" type="image/png">
     <link rel="stylesheet" href="/css/style.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
 </head>
 <body>
   <div class="container">
-    <div class="div">land Chat <a href="/about.html" target="_blank"><i class="ri-information-fill"></i></a></div>
+    <div class="div">Free Chat By kChat <a href="/about.html" target="_blank"><i class="ri-information-fill"></i></a></div>
     <div class="usercount"></div>
     
   
@@ -58,6 +59,7 @@ function sendMessage() {
   displayMessage("You", message, true); // Display sent message
   messageinp.value = ''; // Clear input field after sending message
   container.scrollTop = container.scrollHeight;
+  focus()
 }
 
 socket.on("connect", () => {
