@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="div">Global Chat <a href="/about.html" target="_blank"><i class="ri-information-fill"></i></a></div>
+    <div class="div">land Chat <a href="/about.html" target="_blank"><i class="ri-information-fill"></i></a></div>
     <div class="usercount"></div>
     
   
@@ -28,7 +28,7 @@
 
 var socket = io();
 let myUserId;
-const names = sessionStorage.getItem("user-name"); // Retrieve the name from session storage
+const names = sessionStorage.getItem("user-name"); 
 const messageinp = document.querySelector(".message-sent");
 const btn = document.querySelector(".btn");
 const messages = document.querySelector(".messages");

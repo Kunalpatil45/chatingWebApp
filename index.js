@@ -7,8 +7,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-const users = {}; // Store users with their socket IDs
-let uniqueUsers = new Set(); // Track unique users by their names or IDs
+const users = {};
+let uniqueUsers = new Set(); 
 
 // Serve the HTML file at the root route
 app.get("/", (req, res) => {
